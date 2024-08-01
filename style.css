@@ -1,0 +1,265 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fa-js {
+    color: #f0db4f;
+}
+
+body {
+    background-color: #303030;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    width: 100%;
+    background: white;
+    font-size: 26px;
+    text-align: center;
+}
+
+footer em {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer img {
+    width: 25px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+    align-content: center;
+    gap: 15px;
+    width: fit-content;
+}
+
+.container h1 {
+    color: white;
+    grid-column: span 2;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 50px;
+    font-size: 48px;
+}
+
+.container div {
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.container button {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: span 2;
+    margin: auto;
+    border-radius: 100%;
+    font-size: 20px;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: 0.15s;
+    border: none;
+}
+
+.container button:hover {
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
+    transform: scale(1.15);
+    background-color: #303030;
+    color: white;
+    border: none;
+}
+
+div .active {
+    border: 5px solid white;
+    box-shadow: 0px 5px 25px 15px rgba(255, 255, 255, 0.25);
+    transition: 0.2s ease-in-out;
+}
+
+div .active-player {
+    border: 5px solid black;
+    box-shadow: 0px 5px 45px 15px rgba(255, 255, 255, 0.25);
+    transition: 0.1s ease-in-out;
+}
+
+.blue {
+    background-color: lightblue;
+}
+
+.red {
+    background-color: tomato;
+    justify-self: start;
+}
+
+.green {
+    background-color: lightgreen;
+}
+
+.purple {
+    background-color: #c52ec5;
+    justify-self: start;
+}
+
+.blue-color {
+    background-color: lightblue;
+}
+
+.red-color {
+    background-color: tomato;
+}
+
+.green-color {
+    background-color: lightgreen;
+}
+
+.purple-color {
+    background-color: #c52ec5;
+}
+
+/* === Start Menu === */
+.start-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 10px;
+}
+
+.start-menu h1 {
+    color: white;
+    font-size: 64px;
+    margin: 20px;
+    text-align: center;
+}
+
+.start-menu button {
+    width: fit-content;
+    font-size: 32px;
+    width: 250px;
+    height: 75px;
+    border-radius: 5px;
+    border: none;
+    transition: 0.15s;
+}
+
+.start-menu button:hover {
+    background-color: #303030;
+    color: white;
+    transform: scale(1.25);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.display-none {
+    display: none !important;
+}
+
+.end-menu {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 100vh;
+}
+
+.end-menu h1 {
+    font-size: 48px;
+}
+
+.end-menu h2 {
+    color: grey;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.end-menu p {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.end-menu section {
+    margin: 20px 0;
+}
+
+.end-menu div {
+    background: white;
+    color: black;
+    padding: 25px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+}
+
+.end-menu div h1 {
+    margin-top: 10px;
+}
+
+.end-menu div button {
+    width: fit-content;
+    margin: auto;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.end-menu div i {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@keyframes rotateBackAndForth {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        padding: 20px;
+    }
+}
